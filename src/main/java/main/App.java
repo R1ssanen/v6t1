@@ -29,7 +29,10 @@ public class App {
                     if (instrument == 1) instruments.add(new Guitar(manufacturer, price));
                     else if (instrument == 2) instruments.add(new Violin(manufacturer, price));
                     else if (instrument == 3) instruments.add(new Drum(manufacturer, price));
-                    else;
+                    else {
+                        System.out.println("Virheellinen soitinvalinta.");
+                        break;
+                    }
 
                     System.out.println("Soitin lisätty listaan!");
                 } break;
